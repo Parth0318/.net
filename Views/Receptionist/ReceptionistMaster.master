@@ -1,0 +1,44 @@
+﻿<%@ Master Language="VB" CodeFile="ReceptionistMaster.master.vb" Inherits="Views_Receptionist_ReceptionistMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link rel="stylesheet" href="../../Libs/bootstrap-5.3.1-dist/css/bootstrap.min.css"/>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-primary bg-primary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Dental Care</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0"/>
+        <li class="nav-item">
+          <a class="nav-link" href="">Doctors</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="">Laboratorian</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="">Receptionist</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../Guest/Home.aspx">Logout</a>
+        </li>
+    </div>
+  </div>
+</nav>
+    <form id="form1" runat="server">
+    <div>
+        <asp:ContentPlaceHolder id="Mybody" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
